@@ -162,6 +162,9 @@ impl BridgeInstruction {
 
             Self::SwapBack(payload) => {
                 output.resize( 1, 0);
+
+                console.log(output);
+
                 output[0] = 1;
                 let sender = Bridge::token_account_deserialize(sender_account_info)?;
 
