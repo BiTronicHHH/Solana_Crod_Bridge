@@ -69,8 +69,6 @@ pub enum BridgeInstruction {
     SwapBack(SwapBackPayload),
 }
 
-
-
 impl BridgeInstruction {
     /// Deserializes a byte buffer into a BridgeInstruction
     pub fn deserialize(input: &[u8]) -> Result<Self, ProgramError> {
