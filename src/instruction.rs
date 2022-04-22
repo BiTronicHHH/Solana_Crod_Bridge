@@ -318,8 +318,10 @@ pub fn transfer_out(
 
     // If the token is a native solana token add a custody account
     if t.asset.chain == CHAIN_ID_SOLANA {
+        
         let custody_key = Bridge::derive_custody_id(program_id, &bridge_key, token_mint)?;
         accounts.push(AccountMeta::new(custody_key, false));
+        
     }
 
     Ok(Instruction {
