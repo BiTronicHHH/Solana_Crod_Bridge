@@ -253,6 +253,7 @@ pub fn initialize(
     for (i, key) in initial_guardian.iter().enumerate() {
         initial_g[i] = *key;
     }
+
     let data = BridgeInstruction::Initialize(InitializePayload {
         config: *config,
         len_guardians: initial_guardian.len() as u8,
