@@ -1,5 +1,5 @@
 #![allow(clippy::too_many_arguments)]
-//! Instruction types
+//! Instruction types for bridge contract
 
 use std::mem::size_of;
 
